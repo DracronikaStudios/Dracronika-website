@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    width: 100%;
+    padding: 5px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.icon {
+    position: fixed;
+    width: 10%;
+    display: block;
+    float: left;
+    margin: -7px 11px;
+}
+body {
+    background-color: wheat;
+}
