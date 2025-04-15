@@ -21,6 +21,7 @@ h1 {
     top: 10px;
     position: sticky;
     text-align: center;
+    font-family: 'Police titre Starcraft', sans-serif;
     font-size: 25px;
 }
 
@@ -393,4 +394,11 @@ a.desc {
 a.desc:visited {
     color:#000;
     text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Police titre Starcraft';
+    src: url("../../ressources/fonts/Starcraft Normal.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

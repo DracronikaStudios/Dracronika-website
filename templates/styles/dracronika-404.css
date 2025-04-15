@@ -21,6 +21,7 @@
     font-size: 30px;
     color: black;
     text-align: center;
+    font-family: 'Police titre Ethnocentric', sans-serif;
   }
 
   p {
@@ -36,3 +37,10 @@
   a:visited {
     color: black;
   }
+
+  @font-face {
+    font-family: 'Police titre Ethnocentric';
+    src: url("../../ressources/fonts/Ethnocentric Rg.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
