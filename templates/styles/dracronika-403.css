@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+    background: wheat;
+    color: #414040;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: 'Police titre Ethnocentric', sans-serif;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  @font-face {
+    font-family: 'Police titre Ethnocentric';
+    src: url("../../ressources/fonts/Ethnocentric Rg.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
