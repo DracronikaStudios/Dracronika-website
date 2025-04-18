@@ -14,7 +14,7 @@
 
 .icon {
     position: sticky;
-    width: 2%;
+    width: 5%;
     display: block;
     float: left;
     margin: -7px 11px;
@@ -22,7 +22,7 @@
 
 .login-icon {
     position: sticky;
-    width: 2%;
+    width: 5%;
     display: block;
     float: right;
     margin: -7px 11px;

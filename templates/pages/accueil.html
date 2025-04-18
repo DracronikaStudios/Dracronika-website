@@ -10,5 +10,24 @@
     
     <body>
 
+        <div id="user-profile">
+            <img id="user-pic" src="" alt="Profil">
+            <span id="user-name"></span>
+        </div>
+
+
+
+        <script>
+            const user = JSON.parse(sessionStorage.getItem("user"));
+          
+            if (!user) {
+                // Pas de données → retour à la page login
+                window.location.href = "login.html";
+            } else {
+                document.getElementById("user-pic").src = user.picture;
+                document.getElementById("user-name").textContent = user.given_name;
+            }
+        </script>
+
     </body>
 </html>
