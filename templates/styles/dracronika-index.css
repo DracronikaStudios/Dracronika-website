@@ -10,11 +10,12 @@
     display: inline-block;
     align-self: center;
     width: 100%;
+    height: 10%;
 }
 
 .icon {
     position: sticky;
-    width: 5%;
+    width: 4%;
     display: block;
     float: left;
     margin: -7px 11px;
@@ -22,7 +23,7 @@
 
 .login-icon {
     position: sticky;
-    width: 5%;
+    width: 4%;
     display: block;
     float: right;
     margin: -7px 11px;
@@ -52,15 +53,7 @@ body {
     text-align: justify;
     text-indent: 1%;
 }
-.mainmenu {
-    margin: 0 auto;
-    position: sticky;
-    top: 0px;
-    display: block;
-    text-decoration: none;
-    color: white;
-    border-bottom: 3px solid whitesmoke;
-}
+
 .box {
     margin-top: -10px;
     padding: calc(1% + 26px);
@@ -71,255 +64,6 @@ body {
     align-items: normal;
 }
 
-a.member {
-    color: #000;
-    text-decoration: none;
-}
-a.member:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-a.member {
-    color: #000;
-    text-decoration: none;
-}
-a.member:visited {
-    color: #000;
-    text-decoration: none;
-}
-
-a.recueils:visited {
-    text-decoration: none;
-    color: green;
-}
-a.poems:visited {
-    text-decoration: none;
-    color: #0084ff;
-}
-li.poems a.poems {
-    width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
-    margin: 0 auto;
-    text-decoration: none;
-    color: #0084ff;
-}
-a.recueils {
-    text-decoration: none;
-    color: green;
-}
-a.poems {
-    text-decoration: none;
-    color: #0084ff;
-}
-li a.roman {
-    width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
-    margin: 0 auto;
-    text-decoration: none;
-    color: #ef3a58;
-}
-a.roman {
-    text-decoration: none;
-    color: #ef3a58;
-}
-a.roman:visited {
-    text-decoration: none;
-    color: #ef3a58;
-}
-li a.programs {
-    width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
-    margin: 0 auto;
-    text-decoration: none;
-    color: #fc3b00;
-}
-li a.site {
-    width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
-    margin: 0 auto;
-    text-decoration: none;
-    color: #1f6ea7;
-}
-button.programs {
-    display: inline-block;
-    width: 30%;
-    height: 40px;
-    background-color: #fc3b00;
-    padding-top: 0%;
-    padding-left: 0%;
-    margin: 5px 5% 2em 5%;
-    border-radius: 5px;
-    border-color: #fc3b00;
-    text-decoration: none;
-    position: sticky;
-    color: #ffffff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-button.Excel {
-    display: inline-block;
-    width: 30%;
-    height: 40px;
-    background-color: #058728;
-    padding-top: 0%;
-    padding-left: 0%;
-    margin: 5px 10% 2em 5%;
-    border-radius: 5px;
-    text-decoration: none;
-    position: sticky;
-    color: #ffffff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-a.task {
-    text-decoration: none;
-    color: #ffffff;
-}
-a.task:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-a.discord {
-    text-decoration: none;
-    color: #ffffff;
-}
-a.discord:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-a.programs {
-    text-decoration: none;
-    color: #fc3b00;
-}
-a.programs:visited {
-    text-decoration: none;
-    color: #fc3b00;
-}
-button.site {
-    display: inline-block;
-    width: 30%;
-    height: 40px;
-    background-color: #1f6ea7;
-    padding-top: 0%;
-    padding-left: 0%;
-    margin: 5px 10% 2em 5%;
-    border-radius: 5px;
-    border-color: #1a5b89;
-    text-decoration: none;
-    position: sticky;
-    color: #ffffff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-button.Discord {
-    display: inline-block;
-    width: 30%;
-    height: 40px;
-    background-color: #986cdf;
-    padding-top: 0%;
-    padding-left: 0%;
-    margin: 5px 10% 2em 5%;
-    border-radius: 5px;
-    border-color: #7e5ab8;
-    text-decoration: none;
-    position: sticky;
-    color: #ffffff;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-}
-ul.teamlist {
-    width: 100%;
-    padding-top: 1%;
-    padding-left: 5%;
-    margin: -19px 5% -15px 25px;
-    text-decoration: none;
-    color: #0084ff;
-}
-div#liste_des_membres {
-    width: 50%;
-    padding-top: 0,5%;
-    padding-left: 4px;
-    padding-bottom: 2%;
-    margin: -19px 5% -15px 5%;
-    text-decoration: none;
-    color: #0084ff;
-}
-
-table {
-    border-collapse: collapse;
-    border: 2px solid #11424f;
-    font-family: sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-
-caption {
-    caption-side: top;
-    padding: 6px;
-    font-weight: bold;
-}
-
-thead,
-tfoot {
-    background-color: #a9abaa;
-    border: 2px solid #11424f;
-}
-
-th,
-td {
-    border: 1px solid #19596b;
-    padding: 8px 10px;
-}
-
-td:last-of-type {
-    text-align: center;
-}
-
-tbody {
-    background-color: #e4e4e4;
-}
-
-tbody > tr:nth-last-of-type(even) {
-    background-color: #c5c5c5;
-}
-
-tfoot th {
-    text-align: center;
-}
-
-tfoot td {
-    font-weight: bold;
-}
-
-div.descriptions {
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    width: 55%;
-    margin: 2em 5% 1em 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: justify;
-    text-indent: 1%;
-}
-
-a#tableau.member {
-    color: #0084ff;
-    text-decoration: none;
-}
-a#tableau.member:visited {
-    color: #0084ff;
-    text-decoration: none;
-}
-
 p.text a {
     text-decoration: none;
     color: #000;
@@ -327,50 +71,6 @@ p.text a {
 p.text a:visited {
     text-decoration: none;
     color: #000;
-}
-div#project_list {
-    width: 50%;
-    padding-top: 0,5%;
-    padding-left: 4px;
-    padding-bottom: 2%;
-    margin: -19px 5% -15px 5%;
-    text-decoration: none;
-    color: #0084ff;
-}
-
-div#Python {
-    border: 2px solid #11424f;
-}
-
-div#Unreal_Engine {
-    border: 2px solid #11424f;
-}
-
-a#tableau.cahier_des_charges {
-    color: #0084ff;
-    text-decoration: none;
-}
-a#tableau.cahier_des_charges:visited {
-    color: #0084ff;
-    text-decoration: none;
-}
-
-li.caractéristique {
-    width: 75%;
-    padding-top: 1%;
-    padding-left: 5%;
-    color: #0084ff;
-    list-style-type: square;
-    list-style-position: inside;
-    font-weight: bold;
-}
-a.desc {
-    color:#000;
-    text-decoration: none;
-}
-a.desc:visited {
-    color:#000;
-    text-decoration: none;
 }
 
 @font-face {

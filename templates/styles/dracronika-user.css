@@ -5,25 +5,31 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.icon {
+.icon_container {
     position: fixed;
-    width: 10%;
+    display: inline-block;
+    align-self: center;
+    width: 100%;
+}
+
+.icon {
+    position: sticky;
+    width: 5%;
     display: block;
     float: left;
     margin: -7px 11px;
 }
+
 body {
     background-color: wheat;
 }
 
 #user-profile {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: sans-serif;
+    position: sticky;
+    width: 5%;
+    display: block;
+    float: right;
+    margin: -7px 11px;
 }
 
 #user-pic {

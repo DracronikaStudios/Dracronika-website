@@ -42,6 +42,12 @@
         </div>
 
         <script>
+            const allowedUsers = [
+                "camarade1@gmail.com",
+                "camarade2@gmail.com",
+                "magic.evil75@gmail.com"
+            ];
+
             function handleCredentialResponse(response) {
                 const user = parseJwt(response.credential);
                 console.log("Utilisateur connecté :", user);
