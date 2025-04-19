@@ -17,11 +17,21 @@
     width: 5%;
     display: block;
     float: left;
-    margin: -7px 11px;
+    margin: -7px 7px;
 }
 
 body {
     background-color: wheat;
+}
+
+.box {
+    margin-top: -10px;
+    padding: calc(1% + 26px);
+    width: calc(100%);
+    background-color: #50adff;
+    align-items: center;
+    position: fixed;
+    align-items: normal;
 }
 
 #user-profile {
@@ -29,12 +39,12 @@ body {
     width: 5%;
     display: block;
     float: right;
-    margin: -7px 11px;
+    margin: -7px 7px;
 }
 
 #user-pic {
-    width: 40px; 
-    height: 40px; 
+    width: 5%; 
+    height: 5%; 
     border-radius: 50%;
     float: right;
 }
