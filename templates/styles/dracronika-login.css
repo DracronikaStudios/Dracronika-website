@@ -26,11 +26,11 @@ body {
 #custom-login-btn {
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
+}
 
-  #custom-login-btn:hover {
+#custom-login-btn:hover {
     transform: scale(1.05);
-  }
+}
 
 #profile {
     display: none;
@@ -42,4 +42,13 @@ body {
     width: 64px;
     height: 64px;
     margin-bottom: 1rem;
+}
+
+p.text a {
+    text-decoration: none;
+    color: #000;
+}
+p.text a:visited {
+    text-decoration: none;
+    color: #000;
 }
