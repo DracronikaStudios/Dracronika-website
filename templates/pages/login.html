@@ -43,46 +43,41 @@
 
         <p><a href="/Dracronika-website/">Retour à l'accueil du site</a></p>
 
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
         <script>
-            const allowedUsers = [
-                "camarade1@gmail.com",
-                "camarade2@gmail.com",
-                "magic.evil75@gmail.com"
-            ];
+            async function handleCredentialResponse(response) {
+                const user = jwt_decode(response.credential);
+                const userEmail = user.email;
 
-            function handleCredentialResponse(response) {
-                const user = parseJwt(response.credential);
-                console.log("Utilisateur connecté :", user);
-                
-                // Affichage du profil
-                document.getElementById("profile-pic").src = user.picture;
-                document.getElementById("profile-name").textContent = user.name;
-                document.getElementById("profile-email").textContent = user.email;
-                document.getElementById("profile").style.display = "block";
-            
-                // Cacher le bouton Google
-                document.querySelector(".g_id_signin").style.display = "none";
+                try {
+                    const res = await fetch("https://raw.githubusercontent.com/DracronikaStudios/Backend-JSON-website/main/allowed.json");
+                    const allowedEmails = await res.json();
 
-                // Stocker les infos en sessionStorage (ou localStorage)
-                sessionStorage.setItem("user", JSON.stringify(user));
+                    if (allowedEmails.includes(userEmail)) {
+                        // Affichage du profil
+                        document.getElementById("profile-pic").src = user.picture;
+                        document.getElementById("profile-name").textContent = user.name;
+                        document.getElementById("profile-email").textContent = user.email;
+                        document.getElementById("profile").style.display = "block";
 
-                // Rediriger vers la page membre (ex : member-home.html)
-                window.location.href = "accueil.html";
+                        // Cacher le bouton Google
+                        document.querySelector(".g_id_signin").style.display = "none";
 
-                // Auto-login si l'utilisateur a déjà validé
-                google.accounts.id.prompt();
+                        // Stocker les infos
+                        sessionStorage.setItem("user", JSON.stringify(user));
+
+                        // Redirection vers la page des membres
+                        window.location.href = "accueil.html";
+                    } else {
+                        alert("Accès refusé : seuls les membres du studio peuvent se connecter.");
+                    }
+                } catch (err) {
+                    console.error("Erreur lors de la vérification :", err);
+                    alert("Erreur de validation. Veuillez réessayer plus tard.");
+                }
             }
-        
-            function parseJwt (token) {
-                const base64Url = token.split('.')[1];
-                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-                const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
-                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                }).join(''));
-        
-                return JSON.parse(jsonPayload);
-            }
-          </script>
+        </script>
+
 
     </body>
 </html>
